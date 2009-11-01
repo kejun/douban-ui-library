@@ -1,0 +1,56 @@
+<div class="mod">
+<h2>全能搜索 - 1</h2>
+
+<h3>UI</h3>
+<div>
+	<img src="assets/search-3.png">
+</div>
+
+<h3>HTML</h3>
+<textarea name="code" class="html" readonly style="width:90%;height:300px;">
+<form class="j a_discover" method="get" action="/subject_search" id="discover_s"> 
+<input type="text" class="j a_search_text text greyinput" name="search_text" id="discover_text" title="从你感兴趣的东西开始"/>    
+<input type="submit" style="padding: 1px 6px; margin-bottom: 8px; font-size: 14px;" value="搜索"/> 
+<br/>
+<input type="radio" value="1001" name="cat"/>书籍
+<input type="radio" value="1002" name="cat"/>电影
+<input type="radio" value="1003" name="cat"/>音乐
+<input type="radio" value="event" name="cat"/>活动
+<input type="radio" value="group" name="cat"/>小组
+</form>
+</textarea>
+</div>
+
+<div class="mod">
+<h2>全能搜索- 2</h2>
+
+<h3>UI</h3>
+<div>
+	<img src="assets/search-2.png">
+</div>
+
+<h3>HTML</h3>
+<textarea name="code" class="html" readonly style="width:90%;height:300px;">
+<div id="searbar">
+	<span>
+		<a href="javascript:void(0)" class="arrow"><img class="down" src="http://t.douban.com/pics/down.gif"/><img class="up" src="http://t.douban.com/pics/up.gif"/></a>
+		<div class="hidesub" id="dsearch">
+			<a href="/subject_search?cat=1001">书籍</a>
+			<a href="/subject_search?cat=1002">电影</a>
+			<a href="/subject_search?cat=1003">音乐</a>
+			<a href="/group/search">小组</a>
+			<a href="/people_search">成员</a>
+			<a href="/event/search">活动</a>
+		</div>
+	</span>
+	<span class="submit"><input type="submit" value="搜索" class="butt" style="display: none;"/><a class="butt" href="#">搜索</a></span>
+	<span><input type="text" id="page_focus" value="" maxlength="60" size="22" title="书籍、电影、音乐" name="search_text" class="j a_search_text greyinput" autocomplete="off"/></span>
+	<script type="text/javascript">
+		Douban.prettify_form(document.getElementById('ssform'));
+		</script>
+	</div>
+</textarea>
+</div>
+
+
+

@@ -1,0 +1,34 @@
+<div class="mod">
+<h2>登录</h2>
+
+<h3>UI</h3>
+<div>
+	<img src="assets/form-1.png">
+</div>
+
+
+<h3>HTML</h3>
+<textarea name="code" class="html" readonly style="width:90%;height:300px;">
+<form action="/login" method="post" name="lzform">
+    <div class="input">
+    <div class="login_input">
+        <span>Email:  </span>
+        <input type="text" class="text pop_email" name="form_email"/>
+    </div>
+    <div class="login_input">
+        <span>密  码: </span>
+        <input type="password" class="text" id="pop_password" name="form_password"/>
+         <a style="margin-left: 0.8em;" href="http://www.douban.com/login?reset=password">忘记密码了</a>
+    </div>
+    <div class="pop_rem">
+        <input type="checkbox" id="pop_remember" name="remember"/>
+        <label for="pop_remember" class="pl">在这台电脑上记住我</label>
+    </div>
+    <div class="pop_sub">
+			<input type="submit" value="登录" class="submit"/>
+		</div>
+    <a href="/register" class="pop_reg">>还没有注册...</a>
+    </div>
+</form>
+</textarea>
+</div>

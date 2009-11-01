@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>豆瓣UI库</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css">
+<style>
+body{font:14px/1.6 arial,sans-serif;color:#525359;}
+a:link{color:#369;text-decoration:none}
+a:visited{color:#669;text-decoration:none}
+a:hover{color:#FFF;text-decoration:none;background:#039}
+a:active{color:#FFF;text-decoration:none;background:#F93}
+#hd h1{height:40px;line-height:2.4;padding-left:160px;font-size:16px;background:url(http://t.douban.com/pics/logosmall.gif) no-repeat;}
+.mod .hd{padding:10px 0 0 10px;}
+.mod h2{font-size:16px;color:#999;}
+.mod .bd{padding:10px;}
+#category li{padding:5px 10px;line-height:1.2;} 
+#category li ul li{padding:0;line-height:1.5;} 
+#category li ul{margin-left:2em;display:none;}
+#category li p{font-size:12px;}
+#category li.selected ul{display:block;margin:10px;}
+#category li.selected{background:#eee;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;} 
+#category .bd{padding-left:20px;}
+
+#content-area{padding:10px;}
+#cover{text-align:center;padding:4em 0;}
+.yui-layout-unit-top .yui-layout-bd-nohd{border:0 !important;}
+.yui-layout-bd-nohd{background:#fff !important;}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="hd">
+			<h1>豆瓣UI库</h1>
+		</div>
+
+		<div id="bd">
+	<div class="main" id="content-area">
+		<div id="content">
+			<div id="cover">
+			<img src="http://farm4.static.flickr.com/3227/2536091270_fd87b09cf4.jpg">
+			</div>
+		</div>
+  </div>
+
+	<div class="side" id="nav">
+
+<div id="category" class="mod">
+<div class="hd">
+<h2>分类</h2>
+</div>
+
+<div class="bd">
+<ul>
+<li>
+<a href="#">导航</a>
+<ul>
+<li><a href="docs/nav1.html">全局导航</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">页脚</a>
+<ul>
+<li><a href="docs/footer1.html">完整版</a></li>
+<li><a href="docs/footer2.html">简版</a></li>
+</ul>
+</li>
+
+<li>
+<a href="docs/module.html">基本模块</a>
+</li>
+
+<li>
+<a href="#">内容项</a>
+<ul>
+<li><a href="docs/item_book.html">图书</a></li>
+<li><a href="docs/item_movie.html">电影</a></li>
+<li><a href="docs/item_cd.html">唱片</a></li>
+<li><a href="docs/item_event.html">活动</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">列表</a>
+<ul>
+<li> <a href="docs/list_common.html">通用列表</a></li>
+<li> <a href="docs/list_groups.html">小组列表</a></li>
+<li> <a href="docs/list_members.html">成员列表</a></li>
+<li> <a href="docs/list_comments.html">评论列表</a></li>
+<li> <a href="docs/list_photoset.html">相册列表</a></li>
+<li> <a href="docs/list_buzz.html">排行榜</a></li>
+<li> <a href="docs/list_event.html">活动列表</a></li>
+<li> <a href="docs/list_msg.html">消息列表</a> <p>（如：更新，广播，推荐）</p></li>
+<li> <a href="docs/list_bbs.html">论坛列表</a></li>
+<li> <a href="docs/list_tags.html">标签</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">表单</a>
+<ul>
+<li> <a href="docs/form_login.html">登录</a></li>
+<li> <a href="docs/form_reply.html">回应</a></li>
+<li> <a href="docs/form_comments.html">评论</a></li>
+</ul>
+</li>
+
+<li>
+<a href="docs/pagination.html">分页</a>
+</li>
+
+<li>
+<a href="#">提示区</a>
+<ul>
+<li> <a href="docs/msg_alert.html">请求和提醒</a></li>
+</ul>
+</li>
+
+<li>
+<a href="docs/rating.html">评价</a>
+</li>
+
+<li>
+<a href="#">搜索</a>
+<ul>
+<li> <a href="docs/search_member.html">成员搜索</a></li>
+<li> <a href="docs/search_full.html">全能搜索</a></li>
+<li> <a href="docs/search_group.html">小组搜索</a></li>
+<li> <a href="docs/search_book.html">图书搜索</a></li>
+<li> <a href="docs/search_movie.html">电影搜索</a></li>
+<li> <a href="docs/search_cd.html">唱片搜索</a></li>
+<li> <a href="docs/search_artist.html">音乐人</a></li>
+<li> <a href="docs/search_events.html">同城搜索</a></li>
+</ul>
+</li>
+ 
+<li>
+<a href="docs/button.html">按钮</a>
+</li>
+
+<li>
+<a href="docs/ad.html">广告</a>
+</li>
+
+<li>
+<a href="#">媒体</a>
+<ul>
+<li><a href="docs/media_player.html">音乐播放器</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">页面布局</a>
+<ul>
+<li><a href="docs/layout_two.html">二栏布局</a></li>
+<li><a href="docs/layout_three.html">三栏布局</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">页面类型</a>
+<ul>
+<li><a href="docs/page_sigin.html">登录页</a></li>
+<li><a href="docs/page_sigout.html">登出页</a></li>
+<li><a href="docs/page_warnning.html">提示页</a></li>
+<li><a href="docs/page_reg.html">注册页</a></li>
+<li><a href="docs/page_404.html">404</a></li>
+</ul>
+</li>
+
+<li>
+<a href="docs/waiting.html">Widgets</a>
+</li>
+
+</ul>
+</div>
+</div>
+
+  </div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/yuiloader/yuiloader-min.js" ></script>
+	<script>
+(function(){
+
+	var loader = new YAHOO.util.YUILoader({
+require: ['layout', 'selector', 'connection', 'get'],
+loadOptional: 1,
+onSuccess: function(){ onLoaded(); }
+			}), Y, YD, YE, YS, _Doc = document, _Body = _Doc.body;
+loader.insert();
+
+function onLoaded(){
+  Y = YAHOO;
+  YD = YAHOO.util.Dom;
+	YS = YAHOO.util.Selector;
+	YE = YAHOO.util.Event;
+
+	YD.addClass(_Body, 'yui-skin-sam');
+
+	var layout = new Y.widget.Layout({
+		  units: [
+			  {
+				  position: 'center',
+					scroll: true,
+					body: 'content-area'
+				},
+				{
+				  position: 'top',
+					body: 'hd',
+					gutter: '0',
+					height: 36 
+				},
+			  {
+				  position: 'left',
+					width: 300,
+					scroll: true,
+					gutter: '3px',
+					resize: 1,
+					body: 'nav'
+				}
+			]
+		});
+layout.render();
+
+var handleNavClick = function(e){
+	YE.preventDefault(e);
+
+	var lnk = YE.getTarget(e);
+	var item = YD.getAncestorByTagName(lnk, 'li');
+	var subitem = item.getElementsByTagName('ul')[0];
+	var parent = item.parentNode.parentNode.parentNode;
+	if(!parent || !/ul/i.test(parent.tagName)){
+		YD.removeClass(YD.getElementsByClassName('selected', 'li', 'category'), 'selected');
+		YD.addClass(item, 'selected');
+	}
+	if(!subitem){
+		Y.util.Connect.asyncRequest('GET', lnk.getAttribute('href', 2), {
+success: function(res){
+  YD.get('content-area').innerHTML = res.responseText;
+	setTimeout(function(){
+	  dp.SyntaxHighlighter.HighlightAll("code");
+	},20);
+}
+				});
+	}
+};
+
+YE.on(YS.query('#category ul li a'), 'click', handleNavClick);
+
+Y.util.Get.css('http://cn.yimg.com/i/lib/hilighter/1_5_1/xyntaxhighlighter.css');
+Y.util.Get.script(["http://cn.yimg.com/i/lib/hilighter/1_5_1/shcore.js","http://cn.yimg.com/i/lib/hilighter/1_5_1/shbrushjscript.js","http://cn.yimg.com/i/lib/hilighter/1_5_1/shbrushxml.js"], {
+		  onSuccess: function(){
+			dp.sh.Toolbar.Commands.ViewSource.label = "源码";
+			dp.sh.Toolbar.Commands.CopyToClipboard.label = "复制源码";
+			dp.sh.Toolbar.Commands.PrintSource.label = "打印";
+			dp.SyntaxHighlighter.ClipboardSwf = "http://cn.yimg.com/i/lib/hilighter/1_5_1/clipboard.swf";
+			}
+		});
+
+}
+
+}());
+	</script>
+</body>
+</html>

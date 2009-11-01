@@ -1,0 +1,49 @@
+<div class="mod">
+<h2>评论</h2>
+
+<h3>UI</h3>
+<div>
+	<img src="assets/form-3.png">
+</div>
+
+
+<h3>HTML</h3>
+<textarea name="code" class="html" readonly style="width:90%;height:300px;">
+<table align="center">
+	<tbody>
+		<tr>
+			<td width="75" align="center" class="pl2">标题: </td>
+			<td>
+				<input type="text" value="" class="input_basic" style="width: 450px;" maxlength="100" size="50" name="rev_title"/>
+			</td>
+		</tr>
+		<tr>
+			<td height="35" align="center" class="pl2">评价:</td>
+			<td>
+				<label><input type="radio" value="1" name="rev_rating"/>很差</label>
+				<label><input type="radio" value="2" name="rev_rating"/>较差</label>
+				<label><input type="radio" value="3" name="rev_rating"/>还行</label>
+				<label><input type="radio" value="4" name="rev_rating"/>推荐</label>
+				<label><input type="radio" value="5" name="rev_rating"/>力荐</label>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" align="center">
+				<img src="http://t.douban.com/icon/u1170308-26.jpg"/>
+			</td>
+			<td>
+				<textarea style="width: 448px; height: 337px;" name="rev_text" class="j a_rev_text"/>
+				</td>
+			</tr>
+			<tr>
+				<td/>
+					<td>
+						<br/>
+						<input type="submit" value="好了，添加评论" name="rev_submit"/>   
+						<a href="/subject/3886537/">> 取消</a>
+					</td>
+				</tr>
+			</tbody>
+</table>
+</textarea>
+</div>

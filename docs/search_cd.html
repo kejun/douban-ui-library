@@ -1,0 +1,28 @@
+<div class="mod">
+<h2>唱片搜索</h2>
+
+<h3>UI</h3>
+<div>
+	<img src="assets/search-7.png">
+</div>
+
+<h3>HTML</h3>
+<textarea name="code" class="html" readonly style="width:90%;height:300px;">
+<form name="sosp" action="/music/index_search" method="get">
+<p align="center">
+<input type="text" name="q" class="j a_search_text text greyinput" size="28" maxlength="36" value="" title="唱片名、表演者、条码、ISRC" style="height: 14px; width: 305px;"/> 
+<input type="submit" class="butt" value="搜索"/>
+</p>
+<p align="center">
+<input type="radio" checked="on" value="cd" name="search_type"/>唱片
+<input type="radio" value="song" name="search_type"/>可试听的歌曲
+<input type="radio" value="artist" name="search_type"/>音乐人
+</p>
+</form>
+</textarea>
+</div>
+
+
+
+
+
