@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Test_header</title>
+	<link rel="stylesheet" href="core.css" type="text/css" media="screen" charset="utf-8">
+
+	<style>
+.db-nav { width:950px;margin:0 auto; }
+.db-nav:after,.nav-sub:after { content:'\0020';display:block;clear:both;height:0; }
+.db-nav .hot { margin-left:1.2em; }
+.db-nav a.hot:link, .db-nav a.hot:link, .db-nav a.hot:hover, .db-nav a.hot:active { color:#e15225; }
+.nav-logo, .nav-item, .nav-sub { float:left; }
+.nav-logo { background:url(core.png) no-repeat -356px -116px; } 
+.nav-logo a { display:block;width:165px;height:34px;overflow:hidden;line-height:20; }
+.nav-logo a:hover, .nav-logo a:active { background-color:transparent; } 
+.nav-item { position:relative;margin-top:1.5ex;margin-bottom:-1px; }
+.nav-item li { float:left;margin:0 .5ex; }
+.nav-item li a, .nav-item li a:link, .nav-item li a:visited, .nav-item li a:hover, .nav-item li a:active { display:block;font-size:14px;color:#368332;padding:.5ex 1.2ex .2ex 1.2ex; } 
+.nav-item li a:hover, .nav-item li a:active { background-color:transparent;text-decoration:underline; }
+.nav-item li.on { background:url(core.png) no-repeat 100% -280px; }
+.nav-item li.on a, .nav-item li.on a:link, .nav-item li.on a:visited, .nav-item li.on a:hover, .nav-item li.on a:active { color:#000;background:url(core.png) no-repeat -496px -320px; } 
+.nav-srh { float:right;margin:1.6ex 0 0 0;}
+.nav-srh fieldset { _display:inline; }
+.nav-srh legend { display:none; }
+.db-nav .srh-item, .db-nav .srh-submit { float:left; } 
+.srh-item input { border:1px solid #d6d6d6;padding:2px;margin-right:1ex;line-height:1.1;height:14px;*float:left; }
+.srh-submit { height:20px;background:url(core.png) no-repeat -380px -170px; }
+.srh-submit input { border:0;background:transparent;font-size:12px;padding:3px 0;width:4em;text-align:center;cursor:pointer; }
+.srh-submit a {}
+.nav-sub { clear:both;width:100%;border-top:1px solid #e8f5df;background:#f3f9ef;padding:.4em 0; }
+.nav-subitem { float:left;width:100%;margin-right:-200em;text-align:center; }
+.nav-subitem ul { margin-left:-20%; } 
+.nav-info { position:relative;float:right; }
+.nav-info a { margin-right:1.5ex; }
+.nav-subitem li { display:inline;margin:0 1em; }
+	</style>
+	
+</head>
+<body>
+
+
+<div class="db-nav">
+	<div class="nav-logo">
+	  <a href="http://www.douban.com">豆瓣网</a>
+	</div>
+
+	<div class="nav-srh">
+	<form name="ssform" method="get" action="http://www.douban.com/subject_search">
+		<fieldset>
+			<legend>搜索：</legend>
+			<span class="srh-item"><input name="search_text" title="书籍、电影、音乐" type="text" size="22" maxlength="60" value=""></span>
+			<span class="srh-submit"><input type="submit" value="搜索"><a href="#">更多</a></span>
+		</fieldset>
+	</form>
+	</div>
+
+	<div class="nav-item">
+		<ul>
+			<li><a href="http://www.douban.com">首页</a></li>
+			<li class="on"><a href="http://www.douban.com/group">小组</a></li>
+			<li><a href="http://www.douban.com/book">读书</a></li>
+			<li><a href="http://www.douban.com/movie">电影</a></li>
+			<li><a href="http://www.douban.com/music">音乐</a></li>
+			<li><a href="http://www.douban.com/event">同城</a></li>
+			<li><a href="http://9.douban.com" class="hot">九点</a></li>
+		</ul>
+	</div>
+
+
+	<div class="nav-sub">
+		<div class="nav-subitem">
+			<ul>
+				<li><a href="http://www.douban.com/group/mine">我的小组</a></li>
+				<li><a href="http://www.douban.com/group/my_topics">我的发言</a></li>
+				<li><a href="http://www.douban.com/group/discover">更多小组</a></li>
+			</ul>
+		</div>
+		<div class="nav-info">
+			<a href="http://www.douban.com/doumail">豆邮<em>(2)</em></a>
+			<a href="http://www.douban.com/settings">kejun的设置</a>
+			<a href="http://www.douban.com/logout?ck=B8_q">退出</a>
+		</div>
+	</div>
+</div>
+
+content...
+	
+</body>
+</html>
