@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="core.css" type="text/css" media="screen" charset="utf-8">
 
 	<style>
-.db-nav { width:950px;margin:0 auto; }
-.db-nav:after,.nav-sub:after { content:'\0020';display:block;clear:both;height:0; }
-.db-nav .hot { margin-left:1.2em; }
-.db-nav a.hot:link, .db-nav a.hot:link, .db-nav a.hot:hover, .db-nav a.hot:active { color:#e15225; }
+.db-nav { width:100%;margin:0 auto; }
+.db-nav:after, .nav-sub:after { content:'\0020';display:block;clear:both;height:0; }
+.db-nav a.hot { margin-left:1.2em; }
+.db-nav .nav-item a.hot, .db-nav a.hot, .db-nav a.hot:link, .db-nav a.hot:link, .db-nav a.hot:hover, .db-nav a.hot:active { color:#e15225; }
 .nav-logo, .nav-item, .nav-sub { float:left; }
 .nav-logo { background:url(core.png) no-repeat -356px -116px; } 
 .nav-logo a { display:block;width:165px;height:34px;overflow:hidden;line-height:20; }
@@ -19,24 +19,45 @@
 .nav-item li { float:left;margin:0 .5ex; }
 .nav-item li a, .nav-item li a:link, .nav-item li a:visited, .nav-item li a:hover, .nav-item li a:active { display:block;font-size:14px;color:#368332;padding:.5ex 1.2ex .2ex 1.2ex; } 
 .nav-item li a:hover, .nav-item li a:active { background-color:transparent;text-decoration:underline; }
-.nav-item li.on { background:url(core.png) no-repeat 100% -280px; }
-.nav-item li.on a, .nav-item li.on a:link, .nav-item li.on a:visited, .nav-item li.on a:hover, .nav-item li.on a:active { color:#000;background:url(core.png) no-repeat -496px -320px; } 
+.nav-item li.on { background:url(core.png) no-repeat 100% -260px; }
+.nav-item li.on a, .nav-item li.on a:link, .nav-item li.on a:visited, .nav-item li.on a:hover, .nav-item li.on a:active { color:#000;background:url(core.png) no-repeat -495px -300px; } 
 .nav-srh { float:right;margin:1.6ex 0 0 0;}
 .nav-srh fieldset { _display:inline; }
 .nav-srh legend { display:none; }
-.db-nav .srh-item, .db-nav .srh-submit { float:left; } 
-.srh-item input { border:1px solid #d6d6d6;padding:2px;margin-right:1ex;line-height:1.1;height:14px;*float:left; }
-.srh-submit { height:20px;background:url(core.png) no-repeat -380px -170px; }
-.srh-submit input { border:0;background:transparent;font-size:12px;padding:3px 0;width:4em;text-align:center;cursor:pointer; }
-.srh-submit a {}
+.nav-srh .srh-item, .db-nav .srh-submit { float:left; } 
+.nav-srh .srh-item input { border:1px solid #d6d6d6;padding:2px;margin-right:1ex;line-height:1.1;height:14px;*float:left; }
+.nav-srh .srh-submit { position:relative;width:70px;height:20px;background:url(core.png) no-repeat -430px -170px; }
+.nav-srh .on { background-position:-430px -195px; }
+.nav-srh .srh-submit input { border:0;background:transparent;font-size:12px;padding:3px 0;width:50px;text-align:center;cursor:pointer; }
+.nav-srh .srh-submit a { position:absolute;right:4px;top:4px;width:12px;height:12px;overflow:hidden;line-height:4; }
+.nav-srh .srh-submit a:hover,.nav-srh .srh-submit a:active { background-color:transparent; } 
+.srh-opt { position:absolute;width:70px;padding:5px 0;text-align:center;z-index:1;border:1px solid #c5cfad;background:#fff; }
+.srh-opt li { width:100%; } 
+.srh-opt a { display:block; } 
+.nav-srh .srh-opt { display:none; }
 .nav-sub { clear:both;width:100%;border-top:1px solid #e8f5df;background:#f3f9ef;padding:.4em 0; }
 .nav-subitem { float:left;width:100%;margin-right:-200em;text-align:center; }
 .nav-subitem ul { margin-left:-20%; } 
 .nav-info { position:relative;float:right; }
 .nav-info a { margin-right:1.5ex; }
 .nav-subitem li { display:inline;margin:0 1em; }
-	</style>
-	
+
+/* Footer Rules */
+.db-services { width:100%;margin-bottom:1em;overflow:hidden;line-height:2;border-top:1px dashed #ddd;color:#999;padding-top:.2ex; }
+.db-services .services { float:left;margin-right:4em;*margin-right:2.6em; }
+.db-services .basic { width:100%;overflow:hidden;margin:0; } 
+.db-services .basic li { float:left;margin-right:4.2em; *margin-right:3.6em; } 
+.db-services .last,
+.db-services .basic .last { margin:0; }
+.db-services a.first:link, .db-services a.first:visited { color:#369; }
+.db-services a.first:hover, .db-services a.first:active { color:#fff;background:#039; }
+.db-services a:link, .db-services a:visited { color:#999; }
+.db-services a:hover, .db-services a:active { color:#fff;background:#999; }
+.db-inc { clear:both;color:#999;padding-bottom:1em; }
+.db-inc .about { float:right; }
+
+</style>
+
 </head>
 <body>
 
@@ -51,9 +72,19 @@
 		<fieldset>
 			<legend>搜索：</legend>
 			<span class="srh-item"><input name="search_text" title="书籍、电影、音乐" type="text" size="22" maxlength="60" value=""></span>
-			<span class="srh-submit"><input type="submit" value="搜索"><a href="#">更多</a></span>
+			<span class="srh-submit"><input type="submit" value="搜 索"><a href="#">更多</a></span>
 		</fieldset>
 	</form>
+	<div class="srh-opt">
+		<ul>
+			<li> <a href="/subject_search?cat=1001">书籍</a> </li>
+			<li> <a href="/subject_search?cat=1002">电影</a> </li>
+			<li> <a href="/subject_search?cat=1003">音乐</a> </li>
+			<li> <a href="/group/search">小组</a> </li>
+			<li> <a href="/people_search">成员</a> </li>
+			<li> <a href="/event/search">活动</a> </li>
+		</ul>
+	</div>
 	</div>
 
 	<div class="nav-item">
@@ -86,6 +117,66 @@
 </div>
 
 content...
+
+<div id="ft" style="width:950px;margin:0 auto;">
 	
+
+<h3>登录前</h3>
+
+<div class="db-services">
+<div class="services basic">
+<ul>
+	<li><a href="/book/" class="first">读书</a> - <a href="/book/review/best/">热评</a> - <a href="/book/chart">排行榜</a> - <a href="/book/browse">分类浏览</a></li>
+	<li><a href="/music/" class="first">音乐</a> - <a href="/artists/">音乐人</a> - <a href="/music/review/best/">热评</a> - <a href="/music/chart">排行榜</a> - <a href="/music/tag/">分类浏览</a></li>
+	<li><a href="/movie/" class="first">电影</a> - <a href="/movie/review/best/">热评</a> - <a href="/movie/chart">排行榜</a> - <a href="/movie/tag/">分类浏览</a> - <a href="/movie/tv/">电视剧</a></li>
+	<li class="last"><a href="/event/" class="first">同城</a> - <a href="/hosts/">主办方</a> - <a href="/location/world/">其他城市</a> - <a href="/online/">线上活动</a></li>
+</ul>
+</div>
+</div>
+<div class="db-inc">
+<span class="about">
+<a href="/about">关于豆瓣</a> &#183; <a href="/about?topic=contactus">联系我们</a> &#183; <a href="/about?policy=disclaimer">免责声明</a> &#183; <a href="/help/">帮助中心</a> &#183; <a href="/service/">豆瓣服务(API)</a> &#183; <a href="/partner/">品牌合作</a>
+</span>
+<span class="copyright">&copy; 2005－2009 douban.com, all rights reserved</span>
+</div>
+
+
+<h3>登录后</h3>
+
+<div class="db-services">
+<div class="services">
+<ul>
+	<li><a href="/mine/" class="first">我的豆瓣</a> - <a href="/mine/notes">日记</a> - <a href="/mine/photos">相册</a> - <a href="/mine/discussions">评论和讨论</a> - <a href="/mine/board">留言板</a></li>
+	<li><a href="/contacts/" class="first">友邻广播</a> - <a href="/contacts/listfriends">我的朋友</a> - <a href="/contacts/list">我关注的人</a> - <a href="/contacts/find">找朋友</a></li>
+	<li><a href="/group/" class="first">小组首页</a> - <a href="/group/mine">我的小组</a> - <a href="/group/my_topics">我的发言</a> - <a href="/group/discover">更多小组</a></li>
+</ul>
+</div>
+
+<div class="services">
+<ul>
+	<li><a href="/book/" class="first">读书</a> - <a href="/book/review/best/">热评</a> - <a href="/book/chart">排行榜</a> - <a href="/book/browse">分类浏览</a> - <a href="/book/mine">我读</a> - <a href="/book/recommended">豆瓣猜</a></li>
+	<li><a href="/movie/" class="first">电影</a> - <a href="/movie/review/best/">热评</a> - <a href="/movie/chart">排行榜</a> - <a href="/movie/tag/">分类浏览</a> - <a href="/movie/tv/">电视剧</a> - <a href="/movie/mine/">我看</a> - <a href="/movie/recommended/">豆瓣猜</a></li>
+</ul>
+</div>
+	
+<div class="services last">
+<ul>
+	<li><a href="/music/" class="first">音乐</a> - <a href="/artists/">音乐人</a> - <a href="/music/review/best/">热评</a> - <a href="/music/chart">排行榜</a> - <a href="/music/tag/">分类浏览</a> - <a href="/music/mine">我的音乐</a> - <a href="/music/recommended">豆瓣猜</a></li>
+	<li><a href="/event/" class="first">同城</a> - <a href="/hosts/">主办方</a> - <a href="/location/world/">其他城市</a> - <a href="/online/">线上活动</a> - <a href="/event/mine">我的同城</a></li>
+</ul>
+</div>
+</div>
+
+<div class="db-inc">
+<span class="about">
+<a href="/about">关于豆瓣</a> &#183; <a href="/about?topic=contactus">联系我们</a> &#183; <a href="/about?policy=disclaimer">免责声明</a> &#183; <a href="/help/">帮助中心</a> &#183; <a href="/service/">豆瓣服务(API)</a> &#183; <a href="/partner/">品牌合作</a>
+</span>
+<span class="copyright">&copy; 2005－2009 douban.com, all rights reserved</span>
+</div>
+
+</div>
+
+
+
 </body>
 </html>
