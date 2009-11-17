@@ -112,7 +112,6 @@ a img { margin-bottom:-3px; }
 
 /* Modules - List */
 .list-s li { float:left;text-align:center; }
-.list-s li span { display:block; }
 
 /* Message List */
 .list-m .title a { font-size:14px; }
@@ -141,7 +140,7 @@ blockquote q { *zoom:1;padding-right:1em;margin-right:1ex;background:url(data:im
 /* Item */
 .item {*zoom:1;overflow:hidden;}
 .item .pic {float:left;text-align:center;}
-.pic span {display:block;}
+.item .pic span {display:block;}
 .item .info {float:left;text-align:left;}
 .item .info span{color:#666;}
 .item .info ul {margin-left:1em;}
