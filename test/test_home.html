@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Test_home</title>
+<link rel="stylesheet" href="../docs/core.css" type="text/css" media="screen" charset="utf-8">
+<style>
+#db-recommend li { width:50%;margin-bottom:1em; }
+#db-recommend .info li { width:auto;margin:0; }
+#db-recommend .pic { width: 30%; }
+#db-recommend .info { width: 69.9%; }
+#db-comments .content { padding-left:8em; }
+#db-events li { width:50%;margin-bottom:1em;text-align:left; }
+#db-events .item { padding-right:1em; }
+#db-events .title { font-size:14px;margin-bottom:1ex; }
+#db-events .pic img { border:1px solid #ddd;padding:2px; }
+#db-events .pic { width:20%; }
+#db-events .pic a { background:transparent; }
+#db-events .info { width:79.9%; }
+#db-events .info li { width:auto;height:auto;margin:0; }
+</style>
+</head>
+<body id="home-user">
+<div class="wrapper">
+<div id="header">
+<div class="db-nav">
+	<div class="nav-logo">
+	  <a href="http://www.douban.com">豆瓣网</a>
+	</div>
+
+	<div class="nav-srh">
+	<form name="ssform" method="get" action="http://www.douban.com/subject_search">
+		<fieldset>
+			<legend>搜索：</legend>
+			<span class="srh-item"><input name="search_text" title="书籍、电影、音乐" type="text" size="22" maxlength="60" value=""></span>
+			<span class="srh-submit"><input type="submit" value="搜 索"><a href="#">更多</a></span>
+		</fieldset>
+	</form>
+	<div class="srh-opt">
+		<ul>
+			<li> <a href="/subject_search?cat=1001">书籍</a> </li>
+			<li> <a href="/subject_search?cat=1002">电影</a> </li>
+			<li> <a href="/subject_search?cat=1003">音乐</a> </li>
+			<li> <a href="/group/search">小组</a> </li>
+			<li> <a href="/people_search">成员</a> </li>
+			<li> <a href="/event/search">活动</a> </li>
+		</ul>
+	</div>
+	</div>
+
+	<div class="nav-item">
+		<ul>
+			<li class="on"><a href="http://www.douban.com">首页</a></li>
+			<li><a href="http://www.douban.com/group">小组</a></li>
+			<li><a href="http://www.douban.com/book">读书</a></li>
+			<li><a href="http://www.douban.com/movie">电影</a></li>
+			<li><a href="http://www.douban.com/music">音乐</a></li>
+			<li><a href="http://www.douban.com/event">同城</a></li>
+			<li><a href="http://9.douban.com" class="hot">九点</a></li>
+		</ul>
+	</div>
+
+
+	<div class="nav-sub">
+		<div class="nav-info">
+			<a href="http://www.douban.com/doumail">豆邮<em>(2)</em></a>
+			<a href="http://www.douban.com/settings">kejun的设置</a>
+			<a href="http://www.douban.com/logout?ck=B8_q">退出</a>
+		</div>
+	</div>
+</div>
+
+</div>
+<div id="content">
+<h1>欢迎，kejun</h1>
+<div class="article">
+
+	<!-- 今日推荐的书、影、音   · · · · · ·  -->
+	<div id="db-recommend" class="mod">
+	  <div class="hd">
+			<h2>今日推荐的书、影、音   · · · · · · </h2>  
+		</div>
+		<div class="bd">
+			<ul class="list-s">
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="Nirvana Unplugged" href="/subject/1449961/"><img alt="Nirvana Unplugged" src="http://t.douban.com/spic/s3399011.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">Nirvana Unplugged</a> <span class="category">[电影]</span></li>
+							<li>Kurt Cobain ... Himself / USA</li>
+							<li><span class="rating5-t">&nbsp;</span></li>
+							<li><span class="from">来自豆瓣猜</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="We Started Nothing" href="/subject/1449961/"><img alt="We Started Nothing" src="http://t.douban.com/spic/s3087232.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">We Started Nothing</a> <span class="category">[音乐]</span></li>
+							<li>The Ting Tings / Audio CD / 2008-05-19</li>
+							<li><span class="rating45-t">&nbsp;</span></li>
+							<li><span class="from">友邻收藏</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="摇滚乐的历史第四集" href="/subject/1449961/"><img alt="摇滚乐的历史第四集" src="http://t.douban.com/spic/s1689627.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">摇滚乐的历史第四集</a> <span class="category">[电影]</span></li>
+							<li>Eric Burdon / 美国</li>
+							<li><span class="rating45-t">&nbsp;</span></li>
+							<li><span class="from">来自豆瓣猜</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="摇滚乐的历史第七集" href="/subject/1449961/"><img alt="摇滚乐的历史第七集" src="http://t.douban.com/spic/s1689623.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">摇滚乐的历史第七集</a> <span class="category">[电影]</span></li>
+							<li>Chuck Berry / 美国</li>
+							<li><span class="rating45-t">&nbsp;</span></li>
+							<li><span class="from">来自豆瓣猜</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="Nirvanci"摇滚乐的历史第九集" href="/subject/1449961/"><img alt="摇滚乐的历史第九集" src="http://t.douban.com/spic/s1689621.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">摇滚乐的历史第九集</a> <span class="category">[电影]</span></li>
+							<li>Iggy Pop / 美国</li>
+							<li><span class="rating45-t">&nbsp;</span></li>
+							<li><span class="from">来自豆瓣猜</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="item">
+					<div class="pic">
+						<a title="杀死你的偶像" href="/subject/1449961/"><img alt="杀死你的偶像" src="http://t.douban.com/spic/s1987423.jpg"></a>
+					</div>
+					<div class="info">
+						<ul>
+							<li><a href="/subject/1449961/">杀死你的偶像</a> <span class="category">[电影]</span></li>
+							<li>Michael Gira / USA</li>
+							<li><span class="rating4-t">&nbsp;</span></li>
+							<li><span class="from">来自豆瓣猜</span> <a href="?t=S&u=1170308&s=1449961" class="bn-close" title="没兴趣">X</a></li>
+						</ul>
+					</div>
+				</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	
+
+	<!-- 推荐给你的评论   · · · · · ·  -->
+	<div id="db-comments" class="mod">
+	  <div class="hd">
+			<h2>推荐给你的评论   · · · · · · </h2> 
+		</div>
+		<div class="bd">
+		  
+<div class="comment-item">
+	<div class="pic">
+		<a title="xuyuan" href="/people/dlxycjxy/"><img alt="xuyuan" src="http://t.douban.com/spic/s3582245.jpg"></a>
+	</div>
+	<div class="content">
+		<h3><a class="title" href="/review/1618521/" title="一部真正的励志片">一部真正的励志片</a> </h3>
+		<div class="author">
+			<a href="/people/dlxycjxy/">Nova</a>(三条进，三条沉，+5块的海盗)  评论：<a href="http://www.douban.com/subject/3007773/">The Boat That Rocked / 海盗电台</a> <span class="rating5-t">&nbsp;</span>
+		</div>
+		<p>提示：评论里有关键情节透露</p>
+		<div class="info">&gt; <a href="/review/2516720/">没关系，可以显示全文。</a>  <a href="" class="bn-close" title="没兴趣">X</a></div>
+	</div>
+</div>
+
+<div class="comment-item">
+	<div class="pic">
+		<a title="xuyuan" href="/people/dlxycjxy/"><img alt="xuyuan" src="http://t.douban.com/spic/s4062475.jpg"></a>
+	</div>
+	<div class="content">
+		<h3><a class="title" href="/review/1618521/" title="一部真正的励志片">一部真正的励志片</a> </h3>
+		<div class="author">
+			<a href="/people/dlxycjxy/">titivillus</a> 评论：<a href="http://www.douban.com/subject/3007773/">汉字书法之美</a> <span class="rating4-t">&nbsp;</span>
+		</div>
+		<p>蒋勋也可以称为一种文体吧，更确切地说，一种声音。 男中音，精致，起初有点冷，听久了，听到了柔软。不过那天他讲《寒食帖》的时候，我听着竟有些困了。并非出于厌倦，或许只是因为那声音。 我属于那种写字有困难的人，对书法有向往，但几乎不可能踏进书法门槛，却又反感那种流利的书写。这样一种感伤的、情绪的、浪......<a href="" class="bn-close" title="没兴趣">X</a></p>
+	</div>
+</div>
+
+<div class="comment-item">
+	<div class="pic">
+		<a title="xuyuan" href="/people/dlxycjxy/"><img alt="xuyuan" src="http://t.douban.com/spic/s3582245.jpg"></a>
+	</div>
+	<div class="content">
+		<h3><a class="title" href="/review/1618521/" title="我心中尚未崩坏的地方">我心中尚未崩坏的地方</a> </h3>
+		<div class="author">
+			<a href="/people/dlxycjxy/">花非花</a>(寒冷的季节里，听MUSE温暖自己)  评论：<a href="http://www.douban.com/subject/3007773/">The Boat That Rocked / 海盗电台</a> <span class="rating5-t">&nbsp;</span>
+		</div>
+		<p>《海盗电台》的分类算是戏剧，可是又一次的，我看的泪流满面。 如果说前半部我还能没心没肺的哈哈大笑；看到政府取缔了电台之后最后一晚，Count和大家心情悲凉的做最后一次倒数，然后沉寂几秒钟之后的爆发：扯个蛋而已，let'srock，我已经热泪盈眶；那么最后关头船即将沉入海中时，海面上突然涌出大大小小...... <a href="http://www.douban.com/review/2560026/">(8回应)</a> <a href="" class="bn-close" title="没兴趣">X</a></p>
+	</div>
+</div>
+
+
+
+		</div>
+	</div>
+	
+
+	<!-- 推荐给你的活动   · · · · · ·  -->
+	<div id="db-events" class="mod">
+	  <div class="hd">
+			<h2>推荐给你的活动   · · · · · ·  </h2> 
+		</div>
+		<div class="bd">
+<ul class="list-s"> 
+<li>
+<div class="item">
+	<div class="title">
+<a href="/event/11216987/">2009/12/12-25扭曲机器乐队2009全新摇滚大碟《XXX》首发式京津演唱会！！！</a>
+	</div>
+<div class="pic">
+	<a href="/event/11216987/"><img src="http://t.douban.com/bpic/e153677.jpg" width="48" height="48"></a>
+</div>
+<div class="info">
+	<ul>
+		<li>时间：12月12日 周六 - 12月25日 周五</li>
+		<li>地点：北京 东城区 星光现场音乐厅（雍和宫桥北50米...</li>
+		<li>关注人数：157 <a href="/?t=E&u=1170308&s=11216987" class="bn-close" title="没兴趣">X</a></li>
+	</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="item">
+<div class="title">
+<a href="/event/11216987/">充满憎恨的绝望 - PEST Productions 3周年纪念演出</a>
+</div>
+<div class="pic">
+	<a href="/event/11216987/"><img src="http://t.douban.com/bpic/e148140.jpg" width="48" height="48"></a>
+</div>
+<div class="info">
+	<ul>
+		<li>时间：12月20日 周日 08:00 - 10:30</li>
+		<li>地点：北京 东城区 </li>
+		<li>关注人数：452 <a href="/?t=E&u=1170308&s=11216987" class="bn-close" title="没兴趣">X</a></li>
+	</ul>
+</div>
+</div>
+</li>
+</ul>
+<ul class="list-s">
+<li>
+<div class="item">
+<div class="title">
+<a href="/event/11216987/">Steely Heart钢铁的心乐队2009全国巡演</a>
+</div>
+<div class="pic">
+	<a href="/event/11216987/"><img src="http://t.douban.com/bpic/e150965.jpg" width="48" height="48"></a>
+</div>
+<div class="info">
+	<ul>
+		<li>时间：11月11日 周三 - 11月21日 周六</li>
+		<li>地点：北京 天津 南京 上海 武汉 长沙</li>
+		<li>关注人数：450 <a href="/?t=E&u=1170308&s=11216987" class="bn-close" title="没兴趣">X</a></li>
+	</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="item">
+<div class="title">
+<a href="/event/11216987/">2010摇滚新势力 二！</a>
+</div>
+<div class="pic">
+	<a href="/event/11216987/"><img src="http://t.douban.com/bpic/e147926.jpg" width="48" height="48"></a>
+</div>
+<div class="info">
+	<ul>
+		<li>时间：11月29日 周日 20:20 - 23:00</li>
+		<li>地点：北京 朝阳区 东大桥路8号SOHO尚都 北塔3层</li>
+		<li>关注人数：117 <a href="/?t=E&u=1170308&s=11216987" class="bn-close" title="没兴趣">X</a></li>
+	</ul>
+</div>
+</li>
+</ul>
+		</div>
+	</div>
+	
+
+
+
+</div>
+<div class="aside">
+
+	<!-- 请求和提醒   · · · · · ·  -->
+	<div class="mod">
+	  <div class="hd">
+			<h2>请求和提醒   · · · · · ·   </h2>  
+		</div>
+		<div class="bd">
+<div class="infobox">
+<div class="ex1"><span></span></div>
+<div class="bd">
+<ul class="list-m">
+<li>你有 <a href="/request/#friend">1个朋友邀请</a>需要处理</li>
+<li>有 <a href="/request/#group">1个小组</a>邀请你加入，需要你处理</li>
+<li>有 <a href="/request/#event">2个活动</a>邀请你参加，需要你处理</li>
+<li>有 <a href="/request/#online">5个线上活动</a>邀请你参加，需要你处理</li>
+<li class="last">你有 <a href="/notification/">1个提醒</a></li>
+</ul>
+</div>
+<div class="ex2"><span></span></div>
+</div>	  
+		</div>
+	</div>
+	
+
+	<!-- 我关注内容的动态更新   · · · · · · · · · · -->
+	<div id="db-updates" class="mod">
+	  <div class="hd">
+			<h2>我关注内容的动态更新   · · · · · ·  	 </h2>	  
+		</div>
+		<div class="bd">
+
+<div class="update-item">
+	<div class="pic">
+		<a title="刘东明" href="/artist/liudongming/"><img alt="刘东明" src="http://t.douban.com/icon/u100075-4.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">刘东明</a> 写了新日记<a href="/note/50991830/">烂</a>  
+		</div>
+			<blockquote>
+				<q>一晚上连续看两部超级烂片是件考验人的事情，以往我碰上烂片最多坚持10到20分钟就...  </q>
+			</blockquote>
+		</li>
+		</ul>
+	</div>
+</div>
+
+<div class="update-item">
+	<div class="pic">
+		<a title="大飞" href="/artist/liudongming/"><img alt="大飞" src="http://t.douban.com/icon/u101374-28.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">大飞</a> 上传了9张照片到<a href="/note/50991830/">督促自己</a>。  
+		</div>
+		</li>
+		</ul>
+	</div>
+</div>
+
+<div class="update-item">
+	<div class="pic">
+		<a title="声音碎片" href="/artist/liudongming/"><img alt="声音碎片" src="http://t.douban.com/icon/u100356-1.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">声音碎片</a>  添加了活动<a href="/note/50991830/">声音碎片“声声不息”2009-2010跨年全国巡回演出青岛站 </a>  
+		</div>
+		<p>
+		开始时间：2009-12-20 20:00 / 地点：青岛 市南区 列侬酒吧 珠海路20号 / 参加人数：79
+		</p>
+		</li>
+		</ul>
+	</div>
+</div>
+
+
+		</div>
+	</div>
+	
+
+	<!-- 我的友邻广播   · · · · · · · · · · -->
+	<div id="db-friends" class="mod">
+	  <div class="hd">
+			<h2>我的友邻广播   · · · · · · · · · ·</h2> 
+		</div>
+		<div class="bd">
+		  
+<div class="update-item">
+	<div class="pic">
+		<a title="NullPointer" href="/artist/liudongming/"><img alt="NullPointer" src="http://t.douban.com/icon/u1011741-21.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">NullPointer</a>  推荐<a href="/people/zhaoyaya/">赵丫丫</a>的日记<a href="/note/50991830/">为小米找家</a>  
+		</div>
+		<p>
+		北京寒冷的冬夜，小米就趴在小区通往小卖部的必经之路上翘首以待。每个人经过的时候...
+		</p>
+		<blockquote> <q> 继续推～ </q> 
+		<a href="/people/NullPointer/recs?rid=13051736#r13051736">回应</a> <a href="#">- NullPointer的另外1个推荐»</a>
+		</blockquote>
+		</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="update-item">
+	<div class="pic">
+		<a title="about:blank" href="/artist/liudongming/"><img alt="about:blank" src="http://t.douban.com/icon/u2121038-4.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">about:blank</a>  对<a href="/note/50991830/">合肥海洋世界“冬”游记</a>活动感兴趣  
+		</div>
+		<p>
+		开始时间：2009-11-16 18:00 / 地点：合肥 经开区海洋世界（徽园旁边） / 参加人数：8
+		</p>
+		</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="update-item">
+	<div class="pic">
+		<a title="坚强的八〇后" href="/artist/liudongming/"><img alt="坚强的八〇后" src="http://t.douban.com/icon/u1325880-7.jpg"></a>
+	</div>
+	<div class="content">
+	<ul>
+	<li>
+		<div class="author">
+			<a href="/artist/liudongming/">坚强的八〇后</a>  听过<a href="/note/50991830/">陈绮贞精选 </a>  
+		</div>
+		<p>
+		陈绮贞 / 2005 / 中国康艺音像出版社 / CD
+		</p>
+	</li>
+	</ul>
+	</div>
+</div>
+
+
+<div class="update-item">
+	<div class="pic">
+		<a title="hongqn" href="/artist/liudongming/"><img alt="hongqn" src="http://t.douban.com/icon/u1002211-12.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">hongqn</a>  2小时前 说：  
+		</div>
+		<blockquote>
+			<q> 你的我说有了1条新回复” 这话怎么看着这么别扭 </q>
+			<a href="/people/hongqn/miniblog/229229552/">3回应</a>
+		</blockquote>
+		</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="update-item">
+	<div class="pic">
+		<a title="微子" href="/artist/liudongming/"><img alt="微子" src="http://t.douban.com/icon/u3002613-4.jpg"></a>
+	</div>
+	<div class="content">
+		<ul>
+		<li>
+		<div class="author">
+			<a href="/artist/liudongming/">微子</a>  2小时前 说：  
+		</div>
+		<blockquote>
+			<q> 谁能在我说里加上正确的到正在说的我说的URL? </q>
+			<a href="/people/hongqn/miniblog/229229552/">4回应</a>
+		</blockquote>
+		</li>
+		</ul>
+	</div>
+</div>
+
+
+		</div>
+	</div>
+	
+
+	<!-- 寻找豆瓣上的朋友   · · · · · ·  -->
+	<div class="mod">
+	  <div class="hd">
+			<h2>寻找豆瓣上的朋友   · · · · · ·  </h2> 
+		</div>
+		<div class="bd">
+			已经有朋友在使用豆瓣？赶紧在豆瓣上<a href="/contacts/find">找朋友吧!</a>	  
+		</div>
+	</div>
+	
+
+	<!-- 豆瓣号外   · · · · · ·  -->
+	<div class="mod">
+	  <div class="hd">
+			<h2>豆瓣号外   · · · · · ·  </h2>  
+		</div>
+		<div class="bd">
+<div class="infobox">
+<div class="ex1"><span></span></div>
+<div class="bd">
+	<a href="/music/">豆瓣电台</a>开始公测了
+</div>
+<div class="ex2"><span></span></div>
+</div>	  
+		</div>
+	</div>
+	
+</div>
+</div>
+<div id="footer">
+<div class="db-services">
+<div class="services">
+<ul>
+	<li><a href="/mine/" class="first">我的豆瓣</a> - <a href="/mine/notes">日记</a> - <a href="/mine/photos">相册</a> - <a href="/mine/discussions">评论和讨论</a> - <a href="/mine/board">留言板</a></li>
+	<li><a href="/contacts/" class="first">友邻广播</a> - <a href="/contacts/listfriends">我的朋友</a> - <a href="/contacts/list">我关注的人</a> - <a href="/contacts/find">找朋友</a></li>
+	<li><a href="/group/" class="first">小组首页</a> - <a href="/group/mine">我的小组</a> - <a href="/group/my_topics">我的发言</a> - <a href="/group/discover">更多小组</a></li>
+</ul>
+</div>
+
+<div class="services">
+<ul>
+	<li><a href="/book/" class="first">读书</a> - <a href="/book/review/best/">热评</a> - <a href="/book/chart">排行榜</a> - <a href="/book/browse">分类浏览</a> - <a href="/book/mine">我读</a> - <a href="/book/recommended">豆瓣猜</a></li>
+	<li><a href="/movie/" class="first">电影</a> - <a href="/movie/review/best/">热评</a> - <a href="/movie/chart">排行榜</a> - <a href="/movie/tag/">分类浏览</a> - <a href="/movie/tv/">电视剧</a> - <a href="/movie/mine/">我看</a> - <a href="/movie/recommended/">豆瓣猜</a></li>
+</ul>
+</div>
+	
+<div class="services last">
+<ul>
+	<li><a href="/music/" class="first">音乐</a> - <a href="/artists/">音乐人</a> - <a href="/music/review/best/">热评</a> - <a href="/music/chart">排行榜</a> - <a href="/music/tag/">分类浏览</a> - <a href="/music/mine">我的音乐</a> - <a href="/music/recommended">豆瓣猜</a></li>
+	<li><a href="/event/" class="first">同城</a> - <a href="/hosts/">主办方</a> - <a href="/location/world/">其他城市</a> - <a href="/online/">线上活动</a> - <a href="/event/mine">我的同城</a></li>
+</ul>
+</div>
+</div>
+
+<div class="db-inc">
+<span class="about">
+<a href="/about">关于豆瓣</a> &#183; <a href="/about?topic=contactus">联系我们</a> &#183; <a href="/about?policy=disclaimer">免责声明</a> &#183; <a href="/help/">帮助中心</a> &#183; <a href="/service/">豆瓣服务(API)</a> &#183; <a href="/partner/">品牌合作</a>
+</span>
+<span class="copyright">&copy; 2005－2009 douban.com, all rights reserved</span>
+</div>
+
+</div>
+</div>
+</body>
+</html>
