@@ -44,20 +44,26 @@ input[type=submit],input[type=reset],input[type=button] {font-family:'宋体';cu
 a img { margin-bottom:-3px; }
 .mod { width:100%; }
 .hd:after, .bd:after, .ft:after, .mod:after {content:'\0020';display:block;clear:both;height:0; }
+.bn-close { margin-left:2em; }
+a.bn-close:link, a.bn-close:visited, a.bn-close:hover, a.bn-close:active { color:#aaa;font-size:9px;padding:0 2px; }
+a.bn-close:hover, a.bn-close:active { background:#f10;color:#fff;border:2px solid #f00; }
 .hide { position:absolute;visibility:hidden;left:-1000em;top:-1000em; }
 .clear { display:block;clear:both; }
-.cr { float:none;display:block;clear:both;margin:0;padding:0;font-size:0;line-height:0;height:0;overflow:hidden;*margin-bottom:-2px; }
+.cr { float:none;display:block;width:100%;clear:both;margin:0;padding:0;font-size:0;line-height:0;height:0;overflow:hidden;*margin-bottom:-2px; }
+#content h1 { font-size:24px;font-weight:800;margin-bottom:.4em;color:#555; }
 	
 /* Layout */
+#header { margin-bottom:.8em;padding-top:.8em; }
 .wrapper { width:950px;margin:0 auto; }
 #header, #content, #footer { width:100%; }
-#header:after, #content:after, #footer:after { content:'\0020';display:block;clear:both;height:0; }
+.mod .hd:after, .mod .bd:after, .mod .ft:after, #header:after, #content:after, #footer:after { content:'\0020';display:block;clear:both;height:0; }
 .article { float:left;width:590px; }
 .aside { float:right;width:310px; }
 .nav { float:left;width:150px;margin-right:10px; }
 
 /* Modules */
 .mod { margin-bottom:1.4em; }
+.mod h2 { font-size:14px;padding-bottom:1em;color:#060; }
 
 /* Header */
 .db-nav { width:100%;margin:0 auto; }
@@ -111,6 +117,7 @@ a img { margin-bottom:-3px; }
 
 
 /* Modules - List */
+.list-s { clear:both; }
 .list-s li { float:left;text-align:center; }
 
 /* Message List */
@@ -147,14 +154,20 @@ blockquote q { *zoom:1;padding-right:1em;margin-right:1ex;background:url(data:im
 .info li {float:none;text-align:left;} 
 .info li span {display:inline;} 
 
-/* Comment item rules */
+/* Comment item & Update item rules  */
+.update-item, 
 .comment-item {*zoom:1;overflow:hidden;margin-bottom:1.6em;}
+.update-item .pic, 
 .comment-item .pic {position:relative;z-index:1;float:left;margin-right:-100em;}
+.update-item .content, 
 .comment-item .content {float:right:100%;padding-left:6em;}
 .comment-item h3 {margin-bottom:1ex;}
 .comment-item p, .comment-item .author {margin-bottom:1em;}
 .comment-item .title {font-size:14px;} 
-
+.update-item .content { padding-left:5em; } 
+.update-item .author { margin-bottom:.5em; }
+.update-item blockquote, .update-item p { margin:.5em 0; }
+.update-item li { border-bottom:1px solid #eee;min-height:55px;_height:55px; }
 
 /* Photo Album rules */
 .album-photo { text-align:left;overflow:hidden; }
