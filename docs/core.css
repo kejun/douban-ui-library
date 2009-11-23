@@ -50,7 +50,7 @@ a.bn-close:hover, a.bn-close:active { background:#f10;color:#fff;border:2px soli
 .hide { position:absolute;visibility:hidden;left:-1000em;top:-1000em; }
 .clear { display:block;clear:both; }
 .cr { float:none;display:block;width:100%;clear:both;margin:0;padding:0;font-size:0;line-height:0;height:0;overflow:hidden;*margin-bottom:-2px; }
-#content h1 { font-size:24px;font-weight:800;margin-bottom:.4em;color:#555; }
+#content h1 { font-size:26px;font-weight:800;margin-bottom:.4em;color:#555; }
 	
 /* Layout */
 #header { margin-bottom:.8em;padding-top:.8em; }
@@ -102,7 +102,7 @@ a.bn-close:hover, a.bn-close:active { background:#f10;color:#fff;border:2px soli
 .nav-subitem li { display:inline;margin:0 1em; }
 
 /* Footer */
-.db-services { width:100%;margin-bottom:1em;overflow:hidden;line-height:2;border-top:1px dashed #ddd;color:#999;padding-top:.2ex; }
+.db-services { width:100%;margin-bottom:1em;overflow:hidden;line-height:2;border-top:1px dashed #ddd;color:#999;padding-top:.5ex; }
 .db-services .services { float:left;margin-right:4em;*margin-right:2.6em; }
 .db-services .basic { width:100%;overflow:hidden;margin:0; } 
 .db-services .basic li { float:left;margin-right:4.2em; *margin-right:3.6em; } 
@@ -168,6 +168,7 @@ blockquote q { *zoom:1;padding-right:1em;margin-right:1ex;background:url(data:im
 .update-item .author { margin-bottom:.5em; }
 .update-item blockquote, .update-item p { margin:.5em 0; }
 .update-item li { border-bottom:1px solid #eee;min-height:55px;_height:55px; }
+.update-item p { color:#999; }
 
 /* Photo Album rules */
 .album-photo { text-align:left;overflow:hidden; }
